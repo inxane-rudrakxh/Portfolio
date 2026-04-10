@@ -41,7 +41,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative z-20 bg-[#0a0a0a] py-32 px-4 md:px-12 overflow-hidden" id="contact">
+    <section className="relative z-20 bg-[#0a0a0a] py-20 md:py-32 px-4 md:px-12 overflow-hidden pb-32 md:pb-32" id="contact">
       {/* Background Gradients */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-purple-900/10 rounded-full blur-[120px]" />
@@ -57,7 +57,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 text-white tracking-tight">
               Let's work <br />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-500">
                 together.
@@ -69,11 +69,11 @@ export default function Contact() {
             </p>
 
             <div className="flex flex-col gap-6 mb-12">
-              <a href="mailto:rudraksh7709@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
+              <a href="mailto:rudraksh7709@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group min-w-0">
                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 </div>
-                <span className="text-lg">rudraksh7709@gmail.com</span>
+                <span className="text-base md:text-lg break-all">rudraksh7709@gmail.com</span>
               </a>
               
               <div className="flex items-center gap-4">

@@ -32,7 +32,7 @@ export default function ResumePage() {
       <div className="relative z-10 max-w-5xl mx-auto px-4 py-12 md:px-8 md:py-16">
 
         {/* Top bar */}
-        <motion.div {...fadeUp(0)} className="flex justify-between items-center mb-12 no-print">
+        <motion.div {...fadeUp(0)} className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-10 md:mb-12 no-print">
           <Link
             href="/"
             className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors group"
@@ -59,13 +59,13 @@ export default function ResumePage() {
           <div className="inline-block px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-mono text-blue-400 mb-4 backdrop-blur-md">
             résumé
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-3">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-3">
             Rudraksh{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
               Kottalwar
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 font-medium tracking-wide mb-6">
+          <p className="text-base md:text-xl text-gray-300 font-medium tracking-wide mb-4 md:mb-6 leading-snug">
             Full Stack Developer &nbsp;|&nbsp; Python (AI & ML) &nbsp;|&nbsp; UI/UX Designer
           </p>
           <p className="text-gray-400 max-w-3xl leading-relaxed text-base">
@@ -76,11 +76,11 @@ export default function ResumePage() {
           </p>
 
           {/* Contact row */}
-          <div className="flex flex-wrap gap-4 mt-6">
+          <div className="flex flex-wrap gap-2 md:gap-4 mt-4 md:mt-6">
             {[
               { icon: "phone", label: "+91 70834 56836", href: "tel:+917083456836" },
               { icon: "mail", label: "rudraksh7709@gmail.com", href: "mailto:rudraksh7709@gmail.com" },
-              { icon: "globe", label: "Portfolio", href: "https://inxane-rudrakxh.github.io/Rudraksh-Kottalwar/" },
+              { icon: "globe", label: "Portfolio", href: "https://rudraksh-eight.vercel.app" },
               { icon: "github", label: "inxane-rudrakxh", href: "https://github.com/inxane-rudrakxh" },
             ].map((c) => (
               <a

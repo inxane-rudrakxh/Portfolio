@@ -20,9 +20,9 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: any }) {
                 style={{ opacity: opacity1, y: y1 }}
                 className="absolute inset-0 flex items-center justify-center p-8"
             >
-                <div className="text-center">
-                    <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-4">Rudraksh Kottalwar.</h1>
-                    <p className="text-xl md:text-2xl font-light text-gray-300">Full Stack Developer.</p>
+                <div className="text-center px-4">
+                    <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold tracking-tight mb-4 leading-tight">Rudraksh Kottalwar.</h1>
+                    <p className="text-base sm:text-xl md:text-2xl font-light text-gray-300">Full Stack Developer.</p>
                 </div>
             </motion.div>
 
@@ -31,8 +31,8 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: any }) {
                 style={{ opacity: opacity2, y: y2 }}
                 className="absolute inset-0 flex items-center justify-start p-8 md:p-24"
             >
-                <div className="max-w-2xl">
-                    <h2 className="text-5xl md:text-7xl font-bold leading-tight">Building tools <br /><span className="text-blue-500">desktop</span> & web apps.</h2>
+                <div className="max-w-2xl px-4 sm:px-0">
+                    <h2 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight">Building tools <br /><span className="text-blue-500">desktop</span> &amp; web apps.</h2>
                 </div>
             </motion.div>
 
@@ -41,8 +41,8 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: any }) {
                 style={{ opacity: opacity3, y: y3 }}
                 className="absolute inset-0 flex items-center justify-end p-8 md:p-24 text-right"
             >
-                <div className="max-w-2xl">
-                    <h2 className="text-5xl md:text-7xl font-bold leading-tight">Expertise in React, <br /><span className="text-purple-500">Node.js</span> & Firebase.</h2>
+                <div className="max-w-2xl px-4 sm:px-0">
+                    <h2 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight">Expertise in React, <br /><span className="text-purple-500">Node.js</span> &amp; Firebase.</h2>
                 </div>
             </motion.div>
         </div>

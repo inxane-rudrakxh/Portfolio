@@ -63,7 +63,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="relative z-20 bg-[#0a0a0a] py-32 overflow-hidden" id="testimonials">
+    <section className="relative z-20 bg-[#0a0a0a] py-20 md:py-32 overflow-hidden" id="testimonials">
       {/* Background Ambience - Different position for variety */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
          <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[120px]" />
@@ -75,7 +75,7 @@ export default function Testimonials() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight"
+                className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight"
             >
                 Hackathon <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-400">Highlights</span>
             </motion.h2>
@@ -112,7 +112,7 @@ export default function Testimonials() {
             {[...TESTIMONIALS, ...TESTIMONIALS, ...TESTIMONIALS].map((item, index) => (
               <div
                 key={index}
-                className="w-[350px] md:w-[450px] p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm shrink-0"
+                className="w-[280px] sm:w-[350px] md:w-[450px] p-6 md:p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm shrink-0"
               >
                  <div className="flex items-start gap-4 mb-6">
                     <div className="w-12 h-12 rounded-full bg-linear-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg">
@@ -134,7 +134,7 @@ export default function Testimonials() {
 
       <AnimatePresence>
         {isModalOpen && (
-          <div className="absolute inset-0 z-50 flex items-center justify-center px-4 h-full">
+          <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

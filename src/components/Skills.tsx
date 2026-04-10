@@ -10,7 +10,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="relative z-20 bg-[#0a0a0a] min-h-screen py-32 px-4 md:px-12 overflow-hidden" id="skills">
+    <section className="relative z-20 bg-[#0a0a0a] min-h-screen py-20 md:py-32 px-4 md:px-12 overflow-hidden" id="skills">
       {/* Background Ambience */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[120px]" />
@@ -24,7 +24,7 @@ export default function Skills() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16"
         >
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 md:mb-6 tracking-tight">
             Technical <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-400">Arsenal</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
