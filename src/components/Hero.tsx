@@ -1,20 +1,18 @@
 "use client";
 
-import ScrollyVideo from "@/components/ScrollyVideo";
+import ScrollyCanvas from "@/components/ScrollyCanvas";
 import Overlay from "@/components/Overlay";
 
 export default function Hero() {
   return (
     <div className="relative" id="home">
-      <ScrollyVideo
-        src="/hero-video-optimized.mp4"
-        sources={[
-          { src: "/hero-video-optimized.mp4", type: "video/mp4" },
-          { src: "/hero-video.mp4", type: "video/mp4" },
-        ]}
+      <ScrollyCanvas
+        frameCount={128}
+        framePrefix="/sequence/ezgif-frame-"
+        extension=".png"
       >
         {(progress: any) => <Overlay scrollYProgress={progress} />}
-      </ScrollyVideo>
+      </ScrollyCanvas>
     </div>
   );
 }
